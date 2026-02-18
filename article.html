@@ -76,9 +76,55 @@
             margin-bottom: 0.5rem;
             color: var(--accent);
         }
+        /* Стили для блока с цитатой эксперта */
+        .expert-quote {
+            background: linear-gradient(145deg, #f0f7ff, #e6f0fa);
+            border-radius: 16px;
+            padding: 2rem 2.5rem;
+            margin: 3rem 0 2rem;
+            border: 2px solid var(--secondary);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .expert-quote i.fa-quote-left {
+            font-size: 2.5rem;
+            color: var(--primary);
+            opacity: 0.3;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .expert-quote p {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            padding-left: 3rem;
+        }
+        .expert-quote .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 600;
+            color: var(--accent);
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+        .expert-quote .author i {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
         @media (max-width: 768px) {
             .article-content {
                 padding: 2rem 1.5rem;
+            }
+            .expert-quote {
+                padding: 1.5rem;
+            }
+            .expert-quote p {
+                font-size: 1.1rem;
+                padding-left: 2rem;
             }
         }
     </style>
@@ -160,6 +206,16 @@
                 </blockquote>
 
                 <p>Цвет работает независимо от нашего осознания. Изучая его, мы учимся понимать себя.</p>
+
+                <!-- Блок с цитатой эксперта (Мария Пасека) -->
+                <div class="expert-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>«Ребята, спасибо за вашу прекрасную работу. После прочтения статьи и ваших тестов я наконец поняла, почему мой чёрный потолок всё время угнетал меня. Спасибо вам!»</p>
+                    <div class="author">
+                        <i class="fas fa-medal" style="color: gold;"></i>
+                        <span>Мария Пасека, олимпийская чемпионка</span>
+                    </div>
+                </div>
 
                 <p style="margin-top: 2rem;">Подробнее о вкладе Гёте в науку о цвете читайте в разделе <a href="index.html#goethe" style="color: var(--primary); font-weight: 600;">«Теория Гёте»</a>.</p>
             </div>
